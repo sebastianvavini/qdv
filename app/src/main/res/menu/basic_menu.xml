@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_game"
+        android:icon="@drawable/ic_baseline_local_see_24"
+        android:title="@string/novo_jogo"/>
+    <item android:id="@+id/help"
+        android:icon="@drawable/baseline_light_mode_24"
+        android:title="@string/help" />
+</menu>
