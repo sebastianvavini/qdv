@@ -2,9 +2,17 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/new_game"
-        android:icon="@drawable/ic_baseline_local_see_24"
-        android:title="@string/novo_jogo"/>
-    <item android:id="@+id/help"
-        android:icon="@drawable/baseline_light_mode_24"
-        android:title="@string/help" />
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Medita"/>
+
+    <item android:id="@+id/new_sono"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Sono"/>
+
+    <item android:id="@+id/fisico"
+        android:icon="@android:drawable/button_onoff_indicator_on"
+        android:title="Fisico" />
+    <item android:id="@+id/alimento"
+        android:icon="@android:drawable/btn_default_small"
+        android:title="Alimento" />
 </menu>
