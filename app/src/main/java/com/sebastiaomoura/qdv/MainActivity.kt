@@ -5,21 +5,29 @@ import android.view.Menu
 import android.view.MenuInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.sebastiaomoura.qdv.databinding.ActivityMainBinding
 
 @Suppress("UNREACHABLE_CODE")
 class MainActivity : AppCompatActivity() {
+    private lateinit var  binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        loadFragment(Medita())
+        binding=ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        loadFragment(MeditaFragment())
 
-        var bottomNav = findViewById<BottomNavigationView>(R.id.bottomNav)
+        var bottomNav = binding.bottomNav // findViewById<BottomNavigationView>(R.id.bottomNav)
+
 
         bottomNav.setOnItemSelectedListener {
             when (it.itemId){
+
+                R.id.chat -> {
+                    loadFragment(ChatFragment())
+                    true
+                }
                 R.id.new_game ->{
-                    loadFragment(Medita())
+                    loadFragment(MeditaFragment())
                     true
                 }
                 R.id.new_sono ->{
@@ -34,6 +42,8 @@ class MainActivity : AppCompatActivity() {
                     loadFragment(AlimentoFragment())
                     true
                 }
+
+
 
                 else -> {
                     println("else aqui")

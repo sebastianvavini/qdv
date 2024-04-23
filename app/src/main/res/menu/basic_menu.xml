@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/chat"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Chat"/>
     <item android:id="@+id/new_game"
-        android:icon="@drawable/ic_launcher_background"
+        android:icon="@drawable/ic_launcher_foreground"
         android:title="Medita"/>
 
     <item android:id="@+id/new_sono"
@@ -13,6 +17,6 @@
         android:icon="@android:drawable/button_onoff_indicator_on"
         android:title="Fisico" />
     <item android:id="@+id/alimento"
-        android:icon="@android:drawable/btn_default_small"
+        android:icon="@android:drawable/ic_menu_directions"
         android:title="Alimento" />
 </menu>
